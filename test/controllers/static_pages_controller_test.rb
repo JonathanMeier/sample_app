@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionController::TestCase
+<<<<<<< HEAD
   test "should get home" do
     get :home
     assert_response :success
@@ -18,4 +19,11 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
 	assert_select "title", "About | Ruby on Rails Tutorial Sample App"
   end
+=======
+  test "should get ..." do
+    get :...
+    assert_response :success
+  end
+
+>>>>>>> static-pages
 end

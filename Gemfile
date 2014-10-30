@@ -3,11 +3,14 @@ ruby '1.9.3'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.1.6'
-group :development do
+group :development, :test do
   gem 'sqlite3', '1.3.9'
+  gem 'web-console', '2.0.0.beta3'
+  gem 'spring', '1.1.3'
 end
 
 gem 'sass-rails', '4.0.3'
+gem 'rails-html-sanitizer', '1.0.1'
 gem 'tzinfo-data'
 gem 'uglifier', '2.5.3'
 gem 'coffee-rails', '4.0.1'
@@ -17,6 +20,12 @@ gem 'jbuilder', '2.1.3'
 
 group :doc do
   gem 'sdoc', '0.4.1', require: false
+end
+
+group :test do
+   gem 'minitest-reporters', '1.0.5'
+   gem 'mini_backtrace', '0.1.3'
+   gem 'guard-minitest', '2.3.1'
 end
 
 group :production do
